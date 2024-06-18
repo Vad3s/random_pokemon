@@ -103,12 +103,11 @@ class _PokemonScreenState extends State<PokemonScreen> {
                     Text('Number: $pokemonNumber',
                         style: const TextStyle(fontSize: 20)),
                   if (pokemonTyp != null)
-                    Text(
-                      '''Typ: $pokemonTyp 
-${pokemonTyp2 != null ? 'Typ2: $pokemonTyp2' : ''}''',
-                      style: const TextStyle(fontSize: 20),
-                      textAlign: TextAlign.center,
-                    ),
+                    Text('Typ: $pokemonTyp',
+                        style: const TextStyle(fontSize: 20)),
+                  if (pokemonTyp2 != null)
+                    Text('Typ2: $pokemonTyp2',
+                        style: const TextStyle(fontSize: 20)),
                   const SizedBox(height: 16),
                 ],
               ),
